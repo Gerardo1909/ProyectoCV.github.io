@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Imagénes/archive-icon-15949.ico">
+    <link rel="stylesheet" href="./Css/mobile.css" media="screen and (max-width:539px)">
+    <link rel="stylesheet" href="./Css/tablet.css" media="screen and (min-width:540px) and (max-width:1023px)">
+    <link rel="stylesheet" href="./Css/desktop.css" media="screen and (min-width:1024px) and (max-width:1349px)">
+    <link rel="stylesheet" href="./Css/grand_desktop.css" media="screen and (min-width:1350px)">
+    <title>CV</title>
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <ul class="nav_enlaces">
+                <li><a href="index.html">Sobre Mí</a></li>
+                <li><a href="trabajo_realizado.html">Trabajo Realizado</a></li>
+                <li><a href="contactame.html">Contáctame</a></li>
+            </ul>
+        </nav>
+        <a onclick="openNav()" class="menu" href="#"><button>Menú</button></a>
+        <div class="overlay" id="mobile-menu">
+            <a onclick="closeNav()" href="" class="close">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html">Sobre Mí</a>
+                <a href="trabajo_realizado.html">Trabajo Realizado</a>
+                <a href="contactame.html">Contáctame</a>
+            </div>
+        </div> 
+    </header>
+    <main class="main">
+        <section class="section-job-done">
+            <div class="section-text">
+                <h2>Un poco de lo que hago</h2>
+                <p>Aquí muestro una secuencia de fotos tomadas por mí. Logré captar varias imagénes del héroe de la ciudad y es algo que me llena de emoción, por eso lo destaco aquí.Lorem ipsum dolor sit amet. Ea tempora deleniti ut possimus eaque sed nihil omnis et voluptatem inventore et labore earum est obcaecati facilis ut perspiciatis voluptates. Cum laudantium soluta est possimus consectetur vel nobis libero et beatae autem. Aut praesentium dolorem est laudantium enim At recusandae saepe 33 fugit unde.Lorem ipsum dolor sit amet. Ea tempora deleniti ut possimus eaque sed nihil omnis et voluptatem inventore et labore earum est obcaecati facilis ut perspiciatis voluptates. Cum laudantium soluta est possimus consectetur vel nobis libero et beatae autem. Aut praesentium dolorem est laudantium enim At recusandae saepe 33 fugit unde.Lorem ipsum dolor sit amet. Qui voluptatem molestias a modi internos in veritatis doloribus sit voluptas eveniet hic nihil sequi id voluptas odit est consequatur omnis.</p><br>
+                <h2>Sección de imágenes</h2>
+            </div>
+            <div class="section-images">
+                <figure>
+                    <img src="./Imagénes/entrevista_superman.jpg" alt="foto superman">  
+                        <figcaption>Foto de una entrevista que logré conseguir con Superman</figcaption>
+                </figure>
+                <figure class="img-ancha">
+                    <img src="./Imagénes/superman_luisa.jpg" alt="foto superman"> 
+                        <figcaption>Foto tomada a Superman en el momento donde salva a la reportera Luisa Lane</figcaption>
+                </figure>
+                <figure>
+                    <img src="./Imagénes/superman_salvando_ciudadano.jpg" alt="foto superman">
+                        <figcaption>Foto tomada a superman mientras capturaba a un agresor</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>©Hecho por Gerardo</p>
+    </footer>
+    <script type="text/javascript" src="./JS/cv_script.js"></script>
+</body>
+</html>

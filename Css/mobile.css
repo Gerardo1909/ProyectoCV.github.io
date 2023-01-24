@@ -1,0 +1,329 @@
+/* Generalidades antes de empezar a codificar CSS */
+
+@font-face {
+    font-family:Serial ;
+    src:url(./fonts/SofiaSansSemiCondensed-VariableFont_wght.ttf);
+}
+html{
+    font-size: 62.5%;
+}
+:root{
+    --ColorPrimario:#71192d;
+    --ColorSecundario:#240c60;
+    --LetrasColor:antiquewhite solid;
+    --Container-color:#4A4A50;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Serial, sans-serif;
+    color:antiquewhite ;
+    overflow: auto;
+}
+
+/* Estructuración del modelo común entre las páginas */
+
+.header{
+    background-color: var(--ColorPrimario);
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    box-shadow: 0px 10px 10px -6px black;
+}
+.nav_enlaces{
+    display: none;
+}
+.header .menu button{
+    padding: 0 2rem;
+    cursor: pointer;
+    font-size: 2rem;
+    margin: 0 3rem;
+    text-transform: uppercase;
+    border-radius: 1rem;
+    background-color: var(--ColorPrimario);
+}
+.header .menu button:hover{
+    transform: scale(1.1);
+}
+
+.header a{
+    text-decoration: none;
+}
+.header .overlay{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgba(33,49,63, .95);
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+}
+.header .overlay .overlay-content{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.header .overlay a{
+    padding: 1.5rem;
+    font-size: 3.3rem;
+    display: block;
+    transition: all 0.3s ease 0s;
+    font-weight: 700;
+    color: var(--LetrasColor);
+}
+.header .overlay a:hover,
+.header .overlay a:focus{
+    color: var(--ColorPrimario);
+}
+.header .overlay .close{
+    position: absolute;
+    top: 2rem;
+    right: 4.5rem;
+    font: 6.5rem;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--ColorSecundario);
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--ColorPrimario);
+    box-shadow: 0px 0px 10px 0px black inset;
+    width: 80%;
+    border-radius: 1rem;
+    padding: 2.5rem 0rem;
+    margin-bottom: 2.5rem;
+    margin-top: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+/* Sección sobre mi */
+
+.row{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    flex-direction: column;
+    margin-top: 1rem;
+    background-color: var(--Container-color);
+    border-radius: 1rem;
+    box-shadow: 0px 0px 10px 0px black inset;
+}
+.row .aside{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.row .aside h2{
+    border-bottom: solid;
+    font-weight: 700;
+    font-size: 2rem;
+}
+.row .aside .img{
+    padding: 2rem;
+}
+.row .aside figure img{
+    margin-top: 1rem;
+    width: 100%;
+    border-radius: 1rem;
+    border: solid 0.1rem black;
+}
+.row .aside .section-info{
+    display: flex;
+    padding: 1rem;
+    font-size: 1.2rem;
+    justify-content: center;
+}
+.row .aside .section-info .section-info-element1{
+    display: flex;
+    right: 1rem;
+    position: relative;
+    flex-direction: column;
+}
+.row .aside .section-info .section-info-element2{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    left: 3rem;
+}
+.row .article{
+    padding: 1.5rem;
+}
+.row .article h2{
+    border-bottom: solid;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Sección de trabajo realizado */
+
+.main{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 10px 0px black inset;
+    background-color: var(--Container-color);
+}
+.main .section-job-done h2{
+    border-bottom: solid;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.main .section-job-done{
+    padding: 1.5rem;
+}
+.main .section-job-done .section-images{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main .section-job-done .section-images img{
+    margin-top: 1rem;
+    width: 15rem;
+    height: 15rem;
+    position: relative;
+    margin-bottom: 0.3rem;
+    left: 3rem;
+    border: solid 0.5rem #566573 ;
+}
+.main .section-job-done .section-images .img-ancha{
+    width: 23rem;
+}
+
+/* Seccion de contáctame */
+
+.main .form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+.main .form .form-tittle h2{
+    border-bottom: solid;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.main .form .form-tittle p{
+    font-size: 1.4rem;
+}
+.main .form .form-field{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+}
+.main .form .form-field .form-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main .form .form-field .form-item input{
+    border-radius: 0.5rem;
+    width: 12rem;
+    height: 3rem;
+    border: none;
+    color: black;
+    background-color: #eee;
+    margin: 1.5rem;
+    margin-top: 0.5rem;
+}
+.main .form .form-field>button{
+    width: 12rem;
+    height: 4rem;
+    font-size: 2rem;
+    background-color: var(--ColorPrimario);
+    border-radius: 1rem;
+    border: none;
+    border-bottom: solid black 0.3rem;
+}
+.main .form .form-sent h2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    border-bottom: solid;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+.main .form .form-sent{
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 20rem;
+    font-size: 1.5rem;
+    padding: 2rem;
+}
+.main .form .form-sent a{
+    text-decoration: none;
+}
+.main .form .form-sent button{
+    width: 14rem;
+    height: 5rem;
+    font-size: 2rem;
+    background-color: var(--ColorPrimario);
+    border-radius: 1rem;
+    border: none;
+    border-bottom: solid black 0.3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

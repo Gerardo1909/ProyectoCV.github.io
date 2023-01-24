@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="CV de Clark Kent">
+    <link rel="icon" href="./Imagénes/archive-icon-15949.ico">
+    <link rel="stylesheet" href="./Css/mobile.css" media="screen and (max-width:539px)">
+    <link rel="stylesheet" href="./Css/tablet.css" media="screen and (min-width:540px) and (max-width:1023px)">
+    <link rel="stylesheet" href="./Css/desktop.css" media="screen and (min-width:1024px) and (max-width:1349px)">
+    <link rel="stylesheet" href="./Css/grand_desktop.css" media="screen and (min-width:1350px)">
+    <title>CV</title>
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <ul class="nav_enlaces">
+                <li><a href="index.html">Sobre Mí</a></li>
+                <li><a href="trabajo_realizado.html">Trabajo Realizado</a></li>
+                <li><a href="contactame.html">Contáctame</a></li>
+            </ul>
+        </nav>
+        <a onclick="openNav()" class="menu" href="#"><button>Menú</button></a>
+        <div class="overlay" id="mobile-menu">
+            <a onclick="closeNav()" href="" class="close">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html">Sobre Mí</a>
+                <a href="trabajo_realizado.html">Trabajo Realizado</a>
+                <a href="contactame.html">Contáctame</a>
+            </div>
+        </div> 
+    </header>
+
+    <main class="row">
+        <aside class="aside">
+            <figure class="img">
+                    <img src="./Imagénes/Clarkkent-ThroneofAtlantis.png" alt="Foto de Clark Kent" loading="lazy">  
+            </figure>
+            <h2>Detalles</h2>
+            <div class="section-info">
+                <div class="section-info-element1">
+                <p><b>NOMBRE</b></p> <br>
+                <p><b>APELLIDO</b></p> <br>
+                <p><b>EDAD</b></p><br>
+                <p><b>UBICACIÓN</b></p><br>
+                <p><b>TELÉFONO</b></p><br>
+                <p><b>CORREO</b></p><br>
+                <p><b>NACIMIENTO</b></p><br>
+                </div>
+                <div class="section-info-element2">
+                <p>Clark Joseph</p><br>
+                <p>Kent</p><br>
+                <p>30 años</p><br>
+                <p>Metropólis</p><br>
+                <p>12344352</p><br>
+                <p>Clark.K@gmail.com</p><br>
+                <p>18/4/1993</p><br>
+                </div>
+            </div>
+        </aside>
+
+        <article class="article">
+            <section class="section">
+                <h2>Acerca de mí</h2>
+                <p>Licenciado en periodismo egresado de la facultad de humanidades en la universidad de Metropólis con experiencia en medios tradicionales y digitales. Me apasiona el periodismo y le he dedicado gran parte de mi vida a esta carrera, pienso que los mejores momentos son los que se capturan.Lorem ipsum dolor sit amet. Ea tempora deleniti ut possimus eaque sed nihil omnis et voluptatem inventore et labore earum est obcaecati facilis ut perspiciatis voluptates. Cum laudantium soluta est possimus consectetur vel nobis libero et beatae autem. Aut praesentium dolorem est laudantium enim At recusandae saepe 33 fugit unde.</p><br>
+                <h2>Est mollitia corrupti quo earum</h2>
+                <p>Lorem ipsum dolor sit amet. Ea tempora deleniti ut possimus eaque sed nihil omnis et voluptatem inventore et labore earum est obcaecati facilis ut perspiciatis voluptates. Cum laudantium soluta est possimus consectetur vel nobis libero et beatae autem. Aut praesentium dolorem est laudantium enim At recusandae saepe 33 fugit unde.Lorem ipsum dolor sit amet. Ea tempora deleniti ut possimus eaque sed nihil omnis et voluptatem inventore et labore earum est obcaecati facilis ut perspiciatis voluptates. Cum laudantium soluta est possimus consectetur vel nobis libero et beatae autem. Aut praesentium dolorem est laudantium enim At recusandae saepe 33 fugit unde.</p>
+            </section>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <p>©Hecho por Gerardo</p>
+    </footer>
+    <script type="text/javascript" src="./JS/cv_script.js"></script>
+</body>
+</html>

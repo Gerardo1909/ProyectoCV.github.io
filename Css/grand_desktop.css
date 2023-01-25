@@ -1,318 +1,85 @@
-/* Generalidades antes de empezar a codificar CSS */
-
-@font-face {
-    font-family:Serial ;
-    src:url(./fonts/SofiaSansSemiCondensed-VariableFont_wght.ttf);
-}
-html{
-    font-size: 62.5%;
-}
-:root{
-    --ColorPrimario:#71192d;
-    --ColorSecundario:#240c60;
-    --LetrasColor:antiquewhite solid;
-    --Container-color:#4A4A50;
-}
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: Serial, sans-serif;
-    color:antiquewhite ;
-}
-
 /* Estructuración del modelo común entre las páginas */
 
 body{
-    background-color: var(--ColorSecundario);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     height: 100%;
     width: 100%;
 }
-
 .header{
     width: 100%;
     height: 10vh;
-    display: flex;
     align-items: center;
-    justify-content: center;
-    background-color: var(--ColorPrimario);
-    box-shadow: 0px 10px 10px -6px black;
     padding: 1.5rem;
-}
-.menu{
-    display: none;
-} 
-.header .overlay{
-    display: none;
-}
-.header .nav_enlaces{
-    list-style: none;
-    display: flex;
-    align-items: center;
-}
-.header .nav_enlaces a{
-    text-decoration: none;
-    font-size: 2.7rem;
 }
 .header .nav_enlaces li{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 3rem;
-    margin-right: 3rem;
     padding: 1rem;
-    cursor: pointer;
-}
-.header .nav_enlaces li:hover{
-    font-weight: 700;
-    transform: scale(1.1);
 }
 .footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--ColorPrimario);
-    box-shadow: 0px 0px 10px 0px black inset;
     width: 100%;
     height: 10vh;
-    padding: 3.5rem 0rem;
     margin-top: 1.5rem;
-    font-size: 1.8rem;
-    font-weight: 800;
+    margin-bottom: 0rem;
 }
 
 /* Sección sobre mi */
 
 .row{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: +100%;
+    width: 90%;
     height: 80vh;
     margin-top: 3rem;
-    margin-bottom: 2rem;
 }
 .row .aside{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     height: 100%;
-    box-shadow: 0px 0px 10px 0px black inset;
-    background-color: var(--Container-color);
-    border-radius: 1rem;
-    padding: 0.5rem;
-}
-.row .aside .img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 2.5rem;
-    padding-bottom: 0 ;
-}
-.row .aside .img img{
-    width: 100%;
-    border-radius: 1rem;
-    border: solid 0.1rem black;
-    margin-bottom: 1rem;
+    width: 30%;
 }
 .row .aside h2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-bottom: solid;
-    font-weight: 700;
     font-size: 3.5rem;
-    width: 20rem;
 }
-
-.row .aside .section-info{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.row .aside .img{
+    padding: 2.5rem;
+    width: 70%;
 }
 .row .aside .section-info .section-info-element1,
 .row .aside .section-info .section-info-element2{
-    margin: 2rem;
-    font-size: 1.4rem;
-    margin-bottom: 4rem;
+    font-size: 1.6rem;
 }
 .row .article{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    margin-left: 2rem;
     height: 100%;
-    box-shadow: 0px 0px 10px 0px black inset;
-    background-color: var(--Container-color);
     font-size: 2rem;
-    border-radius: 1rem;
-    padding: 4rem;
+    justify-content: flex-start
 }
 .row .article h2{
-    display: flex;
-    flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
-    border-bottom: solid;
-    font-weight: 700;
     font-size: 4rem;
-    margin-bottom: 1rem;
 }
-/* Sección de trabajo realizado */
 
+/* Sección de trabajo realizado */
 .main{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: +100%;
     height: 80vh;
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-}
-.main .section-job-done{
-    background-color: var(--Container-color);
-    border-radius: 1rem;
-    box-shadow: 0px 0px 10px 0px black inset;
-    width: 100%;
-    height: 100%;
-    padding: 2rem;
 }
 .main .section-job-done .section-text h2{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    border-bottom: solid;
-    font-weight: 700;
     font-size: 4rem;
     margin-bottom: 1.5rem;
 }
 .main .section-job-done .section-text{
     font-size: 2rem;
 }
-.main .section-job-done .section-images{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.main .section-job-done .section-images figure{
-    height: 30rem;
-    width: 30rem;
-    margin: 4rem;
-    margin-top: 0.5rem;
-    font-weight: 700;
-    font-size: 2rem;
-}
-.main .section-job-done .section-images figure img{
-    width: 100%;
-    border: solid 0.5rem #566573 ;
-} 
 
 /* Seccion de contáctame */
-
 .main .form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-    background-color: var(--Container-color);
-    border-radius: 1rem;
-    box-shadow: 0px 0px 10px 0px black inset;
-    height: 100%;
-    width: 50%;
+    justify-content: flex-start;
 }
+
 .main .form .form-tittle h2{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    border-bottom: solid;
-    font-weight: 700;
     font-size: 4rem;
     margin-bottom: 1.5rem;
 }
-.main .form .form-tittle{
-    font-size: 2rem;
+.main .form .form-tittle p{
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
 }
 .main .form .form-field{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     font-size: 2.5rem;
-}
-.main .form .form-field .form-item{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.main .form .form-field .form-item input{
-    border-radius: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    width: 12rem;
-    height: 3rem;
-    margin: 1.5rem;
-    color: black;
-    background-color: #eee;
-    margin-top: 0.5rem;
-}
-.main .form .form-field>button{
-    width: 12rem;
-    height: 4rem;
-    font-size: 2rem;
-    background-color: var(--ColorPrimario);
-    border-radius: 1rem;
-    border: none;
-    border-bottom: solid black 0.3rem;
-}
-.main .form .form-field>button:hover{
-    font-weight: 700;
-    transform: scale(1.1);
-}
-.main .form .form-sent h2{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    border-bottom: solid;
-    font-weight: 700;
-    font-size: 4rem;
-    margin-bottom: 1.5rem;
-}
-.main .form .form-sent{
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 2rem;
-    margin-bottom: 20rem;
-    font-size: 2.5rem;
-}
-.main .form .form-sent a{
-    text-decoration: none;
-}
-.main .form .form-sent button{
-    width: 12rem;
-    height: 4rem;
-    font-size: 2rem;
-    background-color: var(--ColorPrimario);
-    border-radius: 1rem;
-    border: none;
-    border-bottom: solid black 0.3rem;
-}
-.main .form .form-sent button:hover{
-    font-weight: 700;
-    transform: scale(1.1);
 }

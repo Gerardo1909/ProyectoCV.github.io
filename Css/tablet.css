@@ -1,46 +1,18 @@
-/* Generalidades antes de empezar a codificar CSS */
-
-@font-face {
-    font-family:Serial ;
-    src:url(./fonts/SofiaSansSemiCondensed-VariableFont_wght.ttf);
-}
 html{
-    font-size: 62.5%;
     display: flex;
     justify-content: center;
-}
-:root{
-    --ColorPrimario:#71192d;
-    --ColorSecundario:#240c60;
-    --LetrasColor:antiquewhite solid;
-    --Container-color:#4A4A50;
 }
 *{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: Serial, sans-serif;
-    color:antiquewhite ;
+    overflow: unset;
 }
-
 /* Estructuración del modelo común entre las páginas */
-
 body{
-    display: flex;
-    flex-direction:column;
-    align-items: center;
     justify-content: center;
-    background-color: var(--ColorSecundario);
 }
 .header{
-    background-color: var(--ColorPrimario);
-    display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 80%;
     padding: 1.5rem;
-    border-radius: 1rem;
-    box-shadow: 0px 10px 10px -6px black;
 }
 .menu{
     display: none;
@@ -65,18 +37,6 @@ body{
     padding: 1rem;
 }
 .footer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--ColorPrimario);
-    box-shadow: 0px 0px 10px 0px black inset;
-    width: 80%;
-    border-radius: 1rem;
-    padding: 2.5rem 0rem;
-    margin-bottom: 2.5rem;
-    margin-top: 1.5rem;
-    font-size: 1.8rem;
-    font-weight: 800;
     position: relative;
     bottom: 0rem;
 }
@@ -84,192 +44,59 @@ body{
 /* Sección sobre mi */
 
 .row{
-    background-color: var(--Container-color);
-    box-shadow: 0px 0px 10px 0px black inset;
-    width: 80%;
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin-top: 1rem;
-    border-radius: 1rem;
 }
-.row .aside{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
+
 .row .aside h2{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-bottom: solid;
-    font-weight: 700;
     font-size: 3.5rem;
 }
-.row .aside .img{
-    padding: 2rem;
-}
 .row .aside figure img{
-    margin-top: 1rem;
-    width: 100%;
     border-radius: 2rem;
-    border: solid 0.1rem black;
-}.row .aside .section-info{
-    display: flex;
+}
+.row .aside .section-info{
     align-items: center;
-    justify-content: center;
-    padding: 1rem;
     font-size: 1.5rem;
 }
+
 .row .aside .section-info .section-info-element1{
-    display: flex;
     right: 4rem;
-    position: relative;
-    flex-direction: column;
 }
 .row .aside .section-info .section-info-element2{
-    display: flex;
     left: 4rem;
-    position: relative;
-    flex-direction: column;
 }
 .row .article{
     padding: 2.5rem;
     font-size: 1.5rem;
 }
-.row .article h2{
-    border-bottom: solid;
-    font-weight: 700;
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
 
 /* Sección de trabajo realizado */
-
-.main{
-    display: flex;
-    width: 80%;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 1rem;
-    border-radius: 1rem;
-    box-shadow: 0px 0px 10px 0px black inset;
-    background-color: var(--Container-color);
-}
 .main .section-job-done h2{
-    border-bottom: solid;
-    font-weight: 700;
-    font-size: 2rem;
-    margin-bottom: 1rem;
+    font-size: 2.5rem;
 }
-.main .section-job-done{
-    padding: 1.5rem;
-}
+
 .main .section-job-done .section-text{
     font-size: 1.5rem;
     padding: 2.5rem;
 }
-.main .section-job-done .section-images{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
 .main .section-job-done .section-images img{
-    margin-top: 1rem;
     width: 20rem;
-    height: 15rem;
-    position: relative;
-    margin-bottom: 0.3rem;
-    left: 3rem;
-    border: solid 0.5rem #566573 ;
 }
-.main .section-job-done .section-images .img-ancha{
-    width: 23rem;
-}
-
 /* Seccion de contáctame */
 
-.main .form{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-}
 .main .form .form-tittle h2{
-    border-bottom: solid;
-    font-weight: 700;
     font-size: 2.3rem;
-    margin-bottom: 1rem;
 }
 .main .form .form-tittle p{
     font-size: 1.6rem;
 }
-.main .form .form-field{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.4rem;
-}
-.main .form .form-field .form-item{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.main .form .form-field .form-item input{
-    border-radius: 0.5rem;
-    width: 12rem;
-    height: 3rem;
-    border: none;
-    color: black;
-    background-color: #eee;
-    margin: 1.5rem;
-    margin-top: 0.5rem;
-}
-.main .form .form-field>button{
-    width: 12rem;
-    height: 4rem;
-    font-size: 2rem;
-    background-color: var(--ColorPrimario);
-    border-radius: 1rem;
-    border: none;
-    border-bottom: solid black 0.3rem;
-}
 .main .form .form-sent h2{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    border-bottom: solid;
-    font-weight: 700;
     font-size: 4rem;
-    margin-bottom: 1.5rem;
 }
 .main .form .form-sent{
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    margin-bottom: 20rem;
     font-size: 2.5rem;
-    padding: 2rem;
 }
-.main .form .form-sent a{
-    text-decoration: none;
-}
-.main .form .form-sent button{
-    width: 14rem;
-    height: 5rem;
-    font-size: 2rem;
-    background-color: var(--ColorPrimario);
-    border-radius: 1rem;
-    border: none;
-    border-bottom: solid black 0.3rem;
-}
+

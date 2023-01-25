@@ -1,66 +1,15 @@
-/* Generalidades antes de empezar a codificar CSS */
-
-@font-face {
-    font-family:Serial ;
-    src:url(./fonts/SofiaSansSemiCondensed-VariableFont_wght.ttf);
-}
-html{
-    font-size: 62.5%;
-}
-:root{
-    --ColorPrimario:#71192d;
-    --ColorSecundario:#240c60;
-    --LetrasColor:antiquewhite solid;
-    --Container-color:#4A4A50;
-}
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: Serial, sans-serif;
-    color:antiquewhite ;
-}
-
 /* Estructuración del modelo común entre las páginas */
 
-body{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-color: var(--ColorSecundario);
-}
 header{
     height: 10%;
-    background-color: var(--ColorPrimario);
-    display: flex;
-    justify-content: center;
-    width: 80%;
     padding: 1.5rem;
-    border-radius: 1rem;
-    box-shadow: 0px 10px 10px -6px black;
-}
-.menu{
-    display: none;
-} 
-.header .overlay{
-    display: none;
-}
-.header .nav_enlaces{
-    list-style: none;
-    display: flex;
-    align-items: center;
 }
 .header .nav_enlaces a{
-    text-decoration: none;
     font-size: 2.7rem;
 }
 .header .nav_enlaces li{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin-left: 3rem;
     margin-right: 3rem;
-    padding: 1rem;
     cursor: pointer;
 }
 .header .nav_enlaces li:hover{
@@ -68,42 +17,76 @@ header{
     transform: scale(1.1);
 }
 .footer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--ColorPrimario);
-    box-shadow: 0px 0px 10px 0px black inset;
-    width: 80%;
     height: 10%;
-    border-radius: 1rem;
-    padding: 3.5rem 0rem;
+    padding: 4.5rem 0rem;
     margin-top: 2rem;
-    font-size: 1.8rem;
-    font-weight: 800;
+    margin-bottom: 0rem;
+    position: static;
+    justify-content: center;
 }
 
 /* Sección sobre mi */
 
 .row{
     height: 80%;
-    width: 80%;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    display: flex;
     align-items: center;
-    justify-content: center;
+    background-color: transparent;
+    box-shadow: none;
+    flex-direction: row;
 }
+
 .row .aside{
+    height: 58rem;
+    width: 40%;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    box-shadow: 0px 0px 10px 0px black inset;
+    background-color: var(--Container-color);
+}
+.row .aside h2{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 58rem;
-    width: 40%;
-    box-shadow: 0px 0px 10px 0px black inset;
-    background-color: var(--Container-color);
-    border-radius: 1rem;
-    padding: 0.5rem;
+    font-size: 3rem;
+    width: 20rem;
+}
+.row .aside .img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem;
+    padding-bottom: 0 ;
+}
+.row .aside .img img{
+    width: 90%;
+    height: 80%;
+    margin-top: 0rem;
+    box-sizing: content-box;
+}
+.row .aside h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    width: 20rem;
+}
+.row .aside .section-info{
+    align-items: center;
+    padding: 0rem;
+
+}
+.row .aside .section-info .section-info-element1,
+.row .aside .section-info .section-info-element2{
+    margin: 2rem;
+    font-size: 1.3rem;
+    margin-bottom: 4rem;
+    left: 0rem;
+    right: 0rem;
 }
 .row .article{
     display: flex;
@@ -124,57 +107,21 @@ header{
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    border-bottom: solid;
-    font-weight: 700;
     font-size: 3rem;
-    margin-bottom: 1rem;
-}
-.row .aside .img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 3rem;
-    padding-bottom: 0 ;
-}
-.row .aside .img img{
-    width: 90%;
-    height: 80%;
-    border-radius: 1rem;
-    border: solid 0.1rem black;
-}
-.row .aside h2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-bottom: solid;
-    font-weight: 700;
-    font-size: 3rem;
-    width: 20rem;
-}
-.row .aside .section-info{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.row .aside .section-info .section-info-element1,
-.row .aside .section-info .section-info-element2{
-    margin: 2rem;
-    font-size: 1.3rem;
-    margin-bottom: 4rem;
 }
 
 /* Sección de trabajo realizado */
 
 .main{
     height: 80%;
-    width: 80%;
     margin-top: 2rem;
     margin-bottom: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: row;
+    box-shadow: none;
+    background-color: transparent;
 }
 .main .section-job-done{
     background-color: var(--Container-color);
@@ -184,23 +131,26 @@ header{
     height: 100%;
     padding: 2rem;
 }
-.main .section-job-done .section-text h2{
+.main .section-job-done h2{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    border-bottom: solid;
-    font-weight: 700;
     font-size: 3rem;
-    margin-bottom: 1rem;
 }
 .main .section-job-done .section-text{
     font-size: 1.5rem;
+    padding: 0rem;
 }
 .main .section-job-done .section-images{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+}
+.main .section-job-done .section-images img{
+    margin-top: 0rem;
+    width: 15rem;
+    height: 15rem;
+    position: static;
+    margin-bottom: 0rem;
 }
 .main .section-job-done .section-images figure{
     height: 25rem;
@@ -208,117 +158,48 @@ header{
     margin: 2rem;
     font-weight: 700;
     font-size: 1.5rem;
+    left: 0;
 }
 .main .section-job-done .section-images figure img{
     width: 100%;
-    border: solid 0.5rem #566573 ;
 }
-
 /* Seccion de contáctame */
 
 .main .form{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center; 
     background-color: var(--Container-color);
     border-radius: 1rem;
     box-shadow: 0px 0px 10px 0px black inset;
     height: 100%;
-    padding: 2rem;
-    width: 50%;
+    width: 60%;
 }
 .main .form .form-tittle h2{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-bottom: solid;
-    font-weight: 700;
     font-size: 3rem;
-    margin-bottom: 1rem;
 }
-.main .form .form-tittle{
+.main .form .form-field .form-item input{
+    position: relative;
+    margin-top: 1.5rem;
+}
+.main .form .form-tittle p{
     font-size: 1.5rem;
 }
 .main .form .form-field{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     font-size: 2.4rem;
-}
-.main .form .form-field .form-item{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.main .form .form-field .form-item input{
-    border-radius: 0.5rem;
-    border: none;
-    width: 12rem;
-    height: 3rem;
-    position: relative;
-    color: black;
-    background-color: #eee;
-    margin-top: 0.5rem;
-    margin: 1.5rem;
-}
-.main .form .form-field .form-item .input-ancho{
-    position: relative;
-    left: 10.6rem;
-}
-.main .form .form-field .form-item .input-ancho2{
-    position: relative;
-    left: 7rem;
-}
-.main .form .form-field>button{
-    width: 12rem;
-    height: 4rem;
-    font-size: 2rem;
-    background-color: var(--ColorPrimario);
-    border-radius: 1rem;
-    border: none;
-    border-bottom: solid black 0.3rem;
 }
 .main .form .form-field>button:hover{
     font-weight: 700;
     transform: scale(1.1);
 }
 .main .form .form-sent h2{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    border-bottom: solid;
-    font-weight: 700;
     font-size: 4rem;
-    margin-bottom: 1.5rem;
 }
 .main .form .form-sent{
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    margin-bottom: 20rem;
     font-size: 2.5rem;
-    padding: 2rem;
-}
-.main .form .form-sent a{
-    text-decoration: none;
-}
-.main .form .form-sent button{
-    width: 14rem;
-    height: 5rem;
-    font-size: 2rem;
-    background-color: var(--ColorPrimario);
-    border-radius: 1rem;
-    border: none;
-    border-bottom: solid black 0.3rem;
 }
 .main .form .form-sent button:hover{
     font-weight: 700;
     transform: scale(1.1);
 }
-

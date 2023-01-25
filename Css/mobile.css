@@ -23,7 +23,12 @@ html{
 }
 
 /* Estructuración del modelo común entre las páginas */
-
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--ColorSecundario);
+}
 .header{
     background-color: var(--ColorPrimario);
     display: flex;
@@ -88,12 +93,6 @@ html{
     right: 4.5rem;
     font: 6.5rem;
 }
-body{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--ColorSecundario);
-}
 .footer{
     display: flex;
     flex-direction: column;
@@ -135,7 +134,7 @@ body{
 .row .aside .img{
     padding: 2rem;
 }
-.row .aside figure img{
+.row .aside .img img{
     margin-top: 1rem;
     width: 100%;
     border-radius: 1rem;
@@ -291,7 +290,6 @@ body{
     border: none;
     border-bottom: solid black 0.3rem;
 }
-
 
 
 

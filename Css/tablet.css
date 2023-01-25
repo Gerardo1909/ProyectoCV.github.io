@@ -54,9 +54,6 @@ body{
     justify-content: center;
     font-size: 3.5rem;
 }
-.row .aside figure img{
-    border-radius: 2rem;
-}
 .row .aside .section-info{
     align-items: center;
     font-size: 1.5rem;

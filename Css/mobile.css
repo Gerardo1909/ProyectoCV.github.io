@@ -133,12 +133,15 @@ body{
 }
 .row .aside .img{
     padding: 2rem;
+    display: flex;
+    justify-content: center;
 }
 .row .aside .img img{
     margin-top: 1rem;
-    width: 100%;
+    width: 80%;
     border-radius: 1rem;
     border: solid 0.1rem black;
+    overflow: auto;
 }
 .row .aside .section-info{
     display: flex;
